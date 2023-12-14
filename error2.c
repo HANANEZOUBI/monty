@@ -25,6 +25,6 @@ void error2(int error_code, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	frees();
 	exit(EXIT_FAILURE);
 }

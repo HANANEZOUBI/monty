@@ -25,7 +25,7 @@ void find(char *opcode, char *val, int ln, int format)
 		{"swap", swap},
 		{"add", add},
 		{"sub", subt},
-		{"div", div},
+		{"div", fdiv},
 		{"mul", mul},
 		{"mod", mod},
 		{"pchar", pchar},
@@ -47,5 +47,5 @@ void find(char *opcode, char *val, int ln, int format)
 		}
 	}
 	if (flag == 1)
-		err(3, ln, opcode);
+		error(3, ln, opcode);
 }

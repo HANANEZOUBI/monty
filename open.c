@@ -14,7 +14,7 @@ void open(char *its_name)
 	if (its_name == NULL || fd == NULL)
 		error(2, its_name);
 
-	read(fd);
+	readf(fd);
 	fclose(fd);
 }
 

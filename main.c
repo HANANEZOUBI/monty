@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	open(argv[1]);
-	free();
+	frees();
 	return (0);
 }
 
@@ -38,9 +38,9 @@ stack_t *create_node(int n)
 }
 
 /**
- * free - to free nodes in the stack.
+ * frees - to free nodes in the stack.
  */
-void free(void)
+void frees(void)
 {
 	stack_t *tmp;
 

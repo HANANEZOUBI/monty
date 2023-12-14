@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * read - read a file
+ * readf - read a file
  * @fd: pointer to file
  *
  * Return: void
  */
 
-void read(FILE *fd)
+void readf(FILE *fd)
 {
 	int line_number, format = 0;
 	char *buffer = NULL;

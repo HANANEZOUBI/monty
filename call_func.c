@@ -26,7 +26,7 @@ void call_func(op_func func, char *op, char *val, int ln, int format)
 		}
 		if (val == NULL)
 			error(5, ln);
-		for (x = 0; val[i] != '\0'; x++)
+		for (x = 0; val[x] != '\0'; x++)
 		{
 			if (isdigit(val[x]) == 0)
 				error(5, ln);

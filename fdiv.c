@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * div - division of the two tops
+ * fdiv - division of the two tops
  * @stack: Pointer to a pointer pointing to top node of the stack.
  * @line_number: the line number of of the opcode.
  */
 
-void div(stack_t **stack, unsigned int line_number)
+void fdiv(stack_t **stack, unsigned int line_number)
 {
 	int rt;
 

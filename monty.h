@@ -44,12 +44,12 @@ typedef void (*op_func)(stack_t **, unsigned int);
 
 void open(char *its_name);
 int split(char *buffer, int line_number, int format);
-void read(FILE *);
+void readf(FILE *);
 int len_chars(FILE *);
 void find(char *, char *, int, int);
 
 stack_t *create_node(int n);
-void free(void);
+void frees(void);
 void print(stack_t **, unsigned int);
 void push(stack_t **, unsigned int);
 void add_to_queue(stack_t **, unsigned int);
@@ -62,7 +62,7 @@ void nop(stack_t **, unsigned int);
 void swap(stack_t **, unsigned int);
 void add(stack_t **, unsigned int);
 void subt(stack_t **, unsigned int);
-void div(stack_t **, unsigned int);
+void fdiv(stack_t **, unsigned int);
 void mul(stack_t **, unsigned int);
 void mod(stack_t **, unsigned int);
 void pchar(stack_t **, unsigned int);
